@@ -3,15 +3,15 @@ Use caddy to proxy
 
 # proxy-http
 
-docker run -d -e proxy <need proxy site> -e host <your domian or :80>  jialezi/proxy-http
+docker run -d -e proxy < the proxy site > -e host < your domian or :80>  jialezi/proxy-http
 
 env:
 
 
-proxy=<proxy site>
+proxy=< the proxy site>
 example: https://www.baidu.com
 
-host=<your domian or :80> 
+host=< your domian or :80> 
 example: http://geegle.ml  or :80
 
 
@@ -24,7 +24,7 @@ browse: http://ip:82
 
 # proxy-https
 
-docker run -d -e proxy <need proxy site> -e host <https://your domian> -e email xx@xxx.xx jialezi/proxy-https
+docker run -d -e proxy < the proxy site> -e host <https://your domian> -e email xx@xxx.xx jialezi/proxy-https
 
 
 !:before applying for an SSL certificate, be sure to resolve the domain name record in advance 
@@ -32,9 +32,9 @@ docker run -d -e proxy <need proxy site> -e host <https://your domian> -e email 
 
 env:
 
-1.proxy=<proxy  site>
-2.host=<your domian> 
-3.eamil=<your email> (to apply ssl)
+1.proxy=< the proxy  site >
+2.host=< your domian > 
+3.eamil=< your email > (to apply ssl)
 
 eg:
 
