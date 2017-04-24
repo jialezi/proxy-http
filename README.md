@@ -1,6 +1,8 @@
 # proxy-http(s)
 Use caddy to proxy
 
+Caddy Usage and reference：https://doub.io/jzzy-2/
+
 # proxy-http
 
 docker run -d -e proxy=< the proxy site > -e host=< your domian or :80>  jialezi/proxy-http
