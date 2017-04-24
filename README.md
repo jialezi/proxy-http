@@ -6,6 +6,8 @@ Use caddy to proxy
 docker run -d -e proxy <need proxy site> -e host <your domian or :80>  jialezi/proxy-http
 
 env:
+
+
 proxy=<need proxy site>
 example: https://www.baidu.com
 
@@ -24,9 +26,12 @@ browse: http://ip:82
 docker run -d -e proxy <need proxy site> -e host <https://your domian >-e email xx@xxx.xx jialezi/proxy-https
 
 env:
+
 proxy=<need proxy site>
 host=<your domian or :80> 
 eamil=<your email> (to apply ssl)
 
 eg:
 docker run -d -e proxy=https://www.google.com -e host=https://geeglo.ml -e email 996@live.in jialezi/proxy-https
+
+browse: https://geeglo.ml
