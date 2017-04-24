@@ -8,10 +8,10 @@ docker run -d -e proxy=< the proxy site > -e host=< your domian or :80>  jialezi
 env:
 
 
-proxy=< the proxy site >    
+1.proxy=< the proxy site >    
 example: proxy=https://www.baidu.com
 
-host=< your domian or :80>    
+2.host=< your domian or :80>    
 example: host=http://geeglo.ml  or host=:80
 
 
