@@ -12,7 +12,7 @@ proxy=< the proxy site >
 example: proxy=https://www.baidu.com
 
 host=< your domian or :80>    
-example: proxy=http://geegle.ml  or proxy=:80
+example: host=http://geegle.ml  or host=:80
 
 
 eg:
