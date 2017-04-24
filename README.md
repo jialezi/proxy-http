@@ -1,7 +1,7 @@
 # proxy-http(s)
 Use caddy to proxy
 
-#proxy-http
+# proxy-http
 
 docker run -d -e proxy <need proxy site> -e host <your domian or :80>  jialezi/proxy-http
 
@@ -19,7 +19,7 @@ docke run -d -p 82:80 -e proxy=https://www.baidu.com -e host=:80 kmm996/proxy-ht
 browse: http://ip:82
 
 
-#proxy-https
+# proxy-https
 
 docker run -d -e proxy <need proxy site> -e host <https://your domian >-e email xx@xxx.xx jialezi/proxy-https
 
