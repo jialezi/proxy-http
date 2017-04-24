@@ -26,11 +26,15 @@ browse: http://ip:82
 
 docker run -d -e proxy <need proxy site> -e host <https://your domian> -e email xx@xxx.xx jialezi/proxy-https
 
+
+!:before applying for an SSL certificate, be sure to resolve the domain name record in advance 
+
+
 env:
 
-proxy=<proxy  site>
-host=<your domian> 
-eamil=<your email> (to apply ssl)
+1.proxy=<proxy  site>
+2.host=<your domian> 
+3.eamil=<your email> (to apply ssl)
 
 eg:
 
