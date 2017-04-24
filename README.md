@@ -17,7 +17,7 @@ example: host=http://geegle.ml  or host=:80
 
 eg:
 
-docke run -d -p 82:80 -e proxy=https://www.baidu.com -e host=:80 kmm996/proxy-http
+docke run -d -p 82:80 -e proxy=https://www.baidu.com -e host=:80 jialezi/proxy-http
 
 browse: http://ip:82
 
