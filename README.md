@@ -8,7 +8,7 @@ docker run -d -e proxy <need proxy site> -e host <your domian or :80>  jialezi/p
 env:
 
 
-proxy=<need proxy site>
+proxy=<proxy site>
 example: https://www.baidu.com
 
 host=<your domian or :80> 
@@ -24,12 +24,12 @@ browse: http://ip:82
 
 # proxy-https
 
-docker run -d -e proxy <need proxy site> -e host <https://your domian >-e email xx@xxx.xx jialezi/proxy-https
+docker run -d -e proxy <need proxy site> -e host <https://your domian> -e email xx@xxx.xx jialezi/proxy-https
 
 env:
 
-proxy=<need proxy site>
-host=<your domian or :80> 
+proxy=<proxy  site>
+host=<your domian> 
 eamil=<your email> (to apply ssl)
 
 eg:
