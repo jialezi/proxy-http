@@ -15,6 +15,7 @@ example: proxy=https://www.baidu.com
 2.host=< your domian or :80>    
 example: host=http://geeglo.ml  or host=:80
 
+(填域名默认自动申请SSL，与下面proxy-https重复)
 
 eg:
 
@@ -25,10 +26,11 @@ browse: http://ip:82
 
 # proxy-https
 
-docker run -d -p 443:443 -e proxy=< the proxy site> -e host=<https://your domian> -e email=xxx@xxx.xx jialezi/proxy-https
+docker run -d -p 80:80 -p 443:443 -e proxy=< the proxy site> -e host=<https://your domian> -e email=xxx@xxx.xx jialezi/proxy-https
 
 
 !:before applying for an SSL certificate, be sure to resolve the domain name record in advance 
+!:申请SSL之前必需先解析好域名，且80端口必需能够访问
 
 
 env:
@@ -43,6 +45,6 @@ env:
 
 eg:
 
-docker run -d -p 443:443 -e proxy=https://www.google.com -e host=https://geeglo.ml -e email 996@live.in jialezi/proxy-https
+docker run -d -p 80:80 -p 443:443 -e proxy=https://www.google.com -e host=https://geeglo.ml -e email=996@live.in jialezi/proxy-https
 
 browse: https://geeglo.ml
