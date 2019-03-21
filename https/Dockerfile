@@ -7,11 +7,8 @@ ENV email 996@live.in
 
 RUN rm -rf /usr/local/caddy/Caddyfile && \
 	echo "#!/bin/bash" > /root/run.sh && \
-	echo 'echo "$host { " >> /usr/local/caddy/Caddyfile '>> /root/run.sh && \
-	echo 'echo "gzip" >> /usr/local/caddy/Caddyfile '>> /root/run.sh && \
-	echo 'echo "tls $email" >> /usr/local/caddy/Caddyfile '>> /root/run.sh && \
-	echo 'echo "proxy / $proxy" >> /usr/local/caddy/Caddyfile '>> /root/run.sh && \
-	echo 'echo "}"  >> /usr/local/caddy/Caddyfile '>> /root/run.sh && \
+	echo 'echo -e "$host { \ngzip \ntls $email \nproxy / $proxy \n}"  > /usr/local/caddy/Caddyfile '>> /root/run.sh && \
+	echo "/etc/init.d/caddy stop" >> /root/run.sh && \
 	echo "/etc/init.d/caddy start" >> /root/run.sh && \
 	echo "tail -f /tmp/caddy.log" >> /root/run.sh && \
 	chmod +x /root/run.sh
