@@ -19,4 +19,4 @@ RUN rm -rf /usr/local/caddy/Caddyfile && \
 
 
 
-CMD ["./root/run.sh"] 
+CMD ["/root/run.sh"] 
